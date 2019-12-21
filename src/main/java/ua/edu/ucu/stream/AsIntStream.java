@@ -1,7 +1,10 @@
 package ua.edu.ucu.stream;
 
 import ua.edu.ucu.function.*;
-import ua.edu.ucu.iterator.MyIterator;
+import ua.edu.ucu.iterator.FilterIterator;
+import ua.edu.ucu.iterator.FlatMapIterator;
+import ua.edu.ucu.iterator.MapIterator;
+import ua.edu.ucu.iterator.StreamIterator;
 import java.util.Iterator;
 
 public class AsIntStream implements IntStream {
@@ -12,7 +15,7 @@ public class AsIntStream implements IntStream {
     }
 
     public static IntStream of(int... values) {
-        return new AsIntStream(new MyIterator(values));
+        return new AsIntStream(new StreamIterator(values));
     }
 
     private Iterable<Integer> intIterable(){
@@ -80,21 +83,24 @@ public class AsIntStream implements IntStream {
 
     @Override
     public IntStream filter(IntPredicate predicate) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new AsIntStream(new FilterIterator(iter, predicate));
     }
 
     @Override
     public void forEach(IntConsumer action) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for (int i : intIterable()) {
+            action.accept(i);
+        }
     }
 
     @Override
     public IntStream map(IntUnaryOperator mapper) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new AsIntStream(new MapIterator(iter, mapper));
     }
 
     @Override
     public IntStream flatMap(IntToIntStreamFunction func) {
+//        return new AsIntStream(new FlatMapIterator(iter, func));
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

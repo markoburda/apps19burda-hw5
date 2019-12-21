@@ -2,11 +2,11 @@ package ua.edu.ucu.iterator;
 
 import java.util.Iterator;
 
-public class MyIterator implements Iterator<Integer>{
+public class StreamIterator implements Iterator<Integer>{
     private int[] intArray;
     private int i = 0;
 
-    public MyIterator(int... values) {
+    public StreamIterator(int... values) {
         intArray = values;
     }
 

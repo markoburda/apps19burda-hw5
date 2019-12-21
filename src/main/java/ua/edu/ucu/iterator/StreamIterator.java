@@ -11,7 +11,7 @@ public class StreamIterator implements Iterator<Integer>{
     }
 
     @Override
-    public Integer next(){
+    public Integer next() {
         return intArray[i++];
     }
 

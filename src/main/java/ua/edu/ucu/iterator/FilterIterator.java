@@ -2,6 +2,7 @@ package ua.edu.ucu.iterator;
 
 import ua.edu.ucu.function.IntPredicate;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class FilterIterator implements Iterator<Integer>{
     private Iterator<Integer> iter;
@@ -16,6 +17,9 @@ public class FilterIterator implements Iterator<Integer>{
 
     @Override
     public Integer next() {
+        if (!iter.hasNext()){
+            throw new NoSuchElementException();
+        }
         Integer temp = next;
         next = null;
         return temp;
@@ -23,8 +27,9 @@ public class FilterIterator implements Iterator<Integer>{
 
     @Override
     public boolean hasNext() {
-        if(next != null)
+        if(next != null){
             return true;
+            }
         else{
             Integer temp;
             while(iter.hasNext()) {

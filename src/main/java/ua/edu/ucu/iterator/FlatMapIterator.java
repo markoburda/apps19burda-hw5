@@ -16,9 +16,6 @@ public class FlatMapIterator implements Iterator<Integer>{
     }
 
     public Integer next() {
-        if (!iter.hasNext()){
-            throw new NoSuchElementException();
-        }
         return newIter.next();
     }
 

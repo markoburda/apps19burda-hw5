@@ -15,9 +15,6 @@ public class MapIterator implements Iterator<Integer> {
 
     @Override
     public Integer next() {
-        if (!iter.hasNext()){
-            throw new NoSuchElementException();
-        }
         return mapper.apply(iter.next());
     }
 

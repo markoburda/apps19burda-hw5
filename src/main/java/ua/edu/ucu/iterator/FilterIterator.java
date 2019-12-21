@@ -2,7 +2,6 @@ package ua.edu.ucu.iterator;
 
 import ua.edu.ucu.function.IntPredicate;
 import java.util.Iterator;
-import java.util.NoSuchElementException;
 
 public class FilterIterator implements Iterator<Integer>{
     private Iterator<Integer> iter;

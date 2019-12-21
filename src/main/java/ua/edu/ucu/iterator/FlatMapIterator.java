@@ -2,8 +2,8 @@ package ua.edu.ucu.iterator;
 
 import ua.edu.ucu.function.IntToIntStreamFunction;
 import ua.edu.ucu.stream.AsIntStream;
+
 import java.util.Iterator;
-import java.util.NoSuchElementException;
 
 public class FlatMapIterator implements Iterator<Integer>{
     private Iterator<Integer> iter;

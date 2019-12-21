@@ -5,6 +5,7 @@ import ua.edu.ucu.iterator.FilterIterator;
 import ua.edu.ucu.iterator.FlatMapIterator;
 import ua.edu.ucu.iterator.MapIterator;
 import ua.edu.ucu.iterator.StreamIterator;
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public class AsIntStream implements IntStream {
@@ -20,6 +21,10 @@ public class AsIntStream implements IntStream {
 
     private Iterable<Integer> intIterable(){
         return () -> iter;
+    }
+
+    public Iterator<Integer> intIterator(){
+        return iter;
     }
 
     @Override
@@ -100,18 +105,31 @@ public class AsIntStream implements IntStream {
 
     @Override
     public IntStream flatMap(IntToIntStreamFunction func) {
-//        return new AsIntStream(new FlatMapIterator(iter, func));
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new AsIntStream(new FlatMapIterator(iter, func));
     }
 
     @Override
     public int reduce(int identity, IntBinaryOperator op) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int value = identity;
+        for (int i : intIterable()) {
+            value = op.apply(value, i);
+        }
+        return value;
     }
 
     @Override
     public int[] toArray() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        ArrayList<Integer> intArrayList = new ArrayList<>();
+        int index = 0;
+        while (iter.hasNext()) {
+            intArrayList.add(iter.next());
+        }
+        int[] intArray = new int[intArrayList.size()];
+        for (Integer i : intArrayList) {
+            intArray[index] = i;
+            index++;
+        }
+        return intArray;
     }
-
 }
+

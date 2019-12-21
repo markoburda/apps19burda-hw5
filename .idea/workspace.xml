@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07399182-6b40-434d-ba4e-f4f37d9a957b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/function/IntConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/function/IntConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/MyIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/StreamIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/FlatMapIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/FlatMapIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/stream/AsIntStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/edu/ucu/stream/AsIntStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/edu/ucu/iterator/MyIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/edu/ucu/stream/AsIntStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/edu/ucu/stream/AsIntStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ua/edu/ucu/StreamAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ua/edu/ucu/StreamAppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,31 +21,52 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/stream/IntStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/stream/AsIntStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+            <state relative-caret-position="163">
+              <caret line="130" column="9" lean-forward="true" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#381#382#0" expanded="true" />
                 <element signature="e#413#414#0" expanded="true" />
                 <element signature="e#462#463#0" expanded="true" />
                 <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
                 <element signature="e#1713#1714#0" expanded="true" />
                 <element signature="e#1792#1793#0" expanded="true" />
                 <element signature="e#2101#2102#0" expanded="true" />
                 <element signature="e#2174#2175#0" expanded="true" />
+                <element signature="e#2343#2344#0" expanded="true" />
+                <element signature="e#2414#2415#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/FlatMapIterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#438#439#0" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/FilterIterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/StreamIterator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="-4">
+              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -76,8 +93,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/StreamAppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            <state relative-caret-position="68">
+              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/AsIntStreamTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1278">
+              <caret line="74" column="40" lean-forward="true" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -85,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/StreamApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="148">
+              <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -100,6 +126,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>intIterable</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -107,12 +138,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/MyIterator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ua/edu/ucu/StreamAppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/function/IntConsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/FilterIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/MapIterator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/StreamApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/FlatMapIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/stream/AsIntStream.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/edu/ucu/StreamAppTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/edu/ucu/AsIntStreamTest.java" />
       </list>
     </option>
   </component>
@@ -184,6 +217,15 @@
               <item name="Streams" type="b2602c69:ProjectViewProjectNode" />
               <item name="apps19burda-hw5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ucu" type="462c0819:PsiDirectoryNode" />
+              <item name="stream" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Streams" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apps19burda-hw5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -227,8 +269,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StreamAppTest">
-    <configuration name="StreamAppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AsIntStreamTest">
+    <configuration name="AsIntStreamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Streams" />
       <extension name="coverage">
         <pattern>
@@ -237,13 +279,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ua.edu.ucu" />
-      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.StreamAppTest" />
+      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.AsIntStreamTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamAppTest.testAverage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AsIntStreamTest.testEmptyAverage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Streams" />
       <extension name="coverage">
         <pattern>
@@ -252,14 +294,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ua.edu.ucu" />
-      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.StreamAppTest" />
-      <option name="METHOD_NAME" value="testAverage" />
+      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.AsIntStreamTest" />
+      <option name="METHOD_NAME" value="testEmptyAverage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamAppTest.testCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AsIntStreamTest.testEmptyMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Streams" />
       <extension name="coverage">
         <pattern>
@@ -268,14 +310,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ua.edu.ucu" />
-      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.StreamAppTest" />
-      <option name="METHOD_NAME" value="testCount" />
+      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.AsIntStreamTest" />
+      <option name="METHOD_NAME" value="testEmptyMax" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamAppTest.testMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AsIntStreamTest.testEmptyMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Streams" />
       <extension name="coverage">
         <pattern>
@@ -284,14 +326,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ua.edu.ucu" />
-      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.StreamAppTest" />
-      <option name="METHOD_NAME" value="testMin" />
+      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.AsIntStreamTest" />
+      <option name="METHOD_NAME" value="testEmptyMin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamAppTest.testSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AsIntStreamTest.testEmptySum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Streams" />
       <extension name="coverage">
         <pattern>
@@ -300,8 +342,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ua.edu.ucu" />
-      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.StreamAppTest" />
-      <option name="METHOD_NAME" value="testSum" />
+      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.AsIntStreamTest" />
+      <option name="METHOD_NAME" value="testEmptySum" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -309,11 +351,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StreamAppTest" />
-        <item itemvalue="JUnit.StreamAppTest.testSum" />
-        <item itemvalue="JUnit.StreamAppTest.testMin" />
-        <item itemvalue="JUnit.StreamAppTest.testCount" />
-        <item itemvalue="JUnit.StreamAppTest.testAverage" />
+        <item itemvalue="JUnit.AsIntStreamTest" />
+        <item itemvalue="JUnit.AsIntStreamTest.testEmptyAverage" />
+        <item itemvalue="JUnit.AsIntStreamTest.testEmptySum" />
+        <item itemvalue="JUnit.AsIntStreamTest.testEmptyMin" />
+        <item itemvalue="JUnit.AsIntStreamTest.testEmptyMax" />
       </list>
     </recent_temporary>
   </component>
@@ -327,44 +369,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576908605547</updated>
-      <workItem from="1576908609550" duration="18107000" />
+      <workItem from="1576908609550" duration="21798000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StreamAppTest_testSum - 2019.12.21 at 14h 36m 49s.xml">
-      <configuration name="StreamAppTest.testSum" configurationId="JUnit" />
+    <history-entry file="AsIntStreamTest_errTest - 2019.12.21 at 16h 25m 10s.xml">
+      <configuration name="AsIntStreamTest.errTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamAppTest - 2019.12.21 at 14h 36m 50s.xml">
-      <configuration name="StreamAppTest" configurationId="JUnit" />
+    <history-entry file="AsIntStreamTest_errTest - 2019.12.21 at 16h 25m 16s.xml">
+      <configuration name="AsIntStreamTest.errTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamAppTest - 2019.12.21 at 14h 37m 38s.xml">
-      <configuration name="StreamAppTest" configurationId="JUnit" />
+    <history-entry file="AsIntStreamTest_testEmptyMax - 2019.12.21 at 16h 26m 54s.xml">
+      <configuration name="AsIntStreamTest.testEmptyMax" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamAppTest - 2019.12.21 at 14h 37m 52s.xml">
-      <configuration name="StreamAppTest" configurationId="JUnit" />
+    <history-entry file="AsIntStreamTest_testEmptyMax - 2019.12.21 at 16h 27m 10s.xml">
+      <configuration name="AsIntStreamTest.testEmptyMax" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamAppTest - 2019.12.21 at 14h 38m 31s.xml">
-      <configuration name="StreamAppTest" configurationId="JUnit" />
+    <history-entry file="AsIntStreamTest_testEmptyMin - 2019.12.21 at 16h 27m 44s.xml">
+      <configuration name="AsIntStreamTest.testEmptyMin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamAppTest - 2019.12.21 at 14h 38m 56s.xml">
-      <configuration name="StreamAppTest" configurationId="JUnit" />
+    <history-entry file="AsIntStreamTest_testEmptySum - 2019.12.21 at 16h 28m 15s.xml">
+      <configuration name="AsIntStreamTest.testEmptySum" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamAppTest - 2019.12.21 at 14h 40m 03s.xml">
-      <configuration name="StreamAppTest" configurationId="JUnit" />
+    <history-entry file="AsIntStreamTest_testEmptyAverage - 2019.12.21 at 16h 29m 13s.xml">
+      <configuration name="AsIntStreamTest.testEmptyAverage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamAppTest - 2019.12.21 at 14h 41m 29s.xml">
-      <configuration name="StreamAppTest" configurationId="JUnit" />
+    <history-entry file="AsIntStreamTest_testEmptyAverage - 2019.12.21 at 16h 29m 24s.xml">
+      <configuration name="AsIntStreamTest.testEmptyAverage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamAppTest - 2019.12.21 at 14h 45m 31s.xml">
-      <configuration name="StreamAppTest" configurationId="JUnit" />
+    <history-entry file="AsIntStreamTest_testEmptyAverage - 2019.12.21 at 16h 29m 35s.xml">
+      <configuration name="AsIntStreamTest.testEmptyAverage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamAppTest - 2019.12.21 at 14h 49m 57s.xml">
-      <configuration name="StreamAppTest" configurationId="JUnit" />
+    <history-entry file="AsIntStreamTest - 2019.12.21 at 16h 29m 52s.xml">
+      <configuration name="AsIntStreamTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18107000" />
+    <option name="totallyTimeSpent" value="21798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -375,9 +417,9 @@
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3298969" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -386,7 +428,7 @@
       <window_info anchor="bottom" id="PVS-Studio" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3298969" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3298969" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -406,55 +448,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/stream/IntStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/function/IntBinaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/StreamApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/function/IntPredicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/StreamAppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/StreamIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/FilterIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -478,33 +475,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/FlatMapIterator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/stream/IntStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/function/IntToIntStreamFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/StreamApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/FilterIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/StreamIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/function/IntPredicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/stream/AsIntStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="163">
+          <caret line="130" column="9" lean-forward="true" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#381#382#0" expanded="true" />
             <element signature="e#413#414#0" expanded="true" />
             <element signature="e#462#463#0" expanded="true" />
             <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
             <element signature="e#1713#1714#0" expanded="true" />
             <element signature="e#1792#1793#0" expanded="true" />
             <element signature="e#2101#2102#0" expanded="true" />
             <element signature="e#2174#2175#0" expanded="true" />
+            <element signature="e#2343#2344#0" expanded="true" />
+            <element signature="e#2414#2415#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/edu/ucu/iterator/FlatMapIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/StreamAppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/edu/ucu/AsIntStreamTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1278">
+          <caret line="74" column="40" lean-forward="true" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
         </state>
       </provider>
     </entry>

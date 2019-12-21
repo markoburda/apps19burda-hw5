@@ -1,40 +1,81 @@
 package ua.edu.ucu.stream;
 
 import ua.edu.ucu.function.*;
+import ua.edu.ucu.iterator.MyIterator;
+import java.util.Iterator;
 
 public class AsIntStream implements IntStream {
+    private Iterator<Integer> iter;
 
-    private AsIntStream() {
-        // To Do
+    private AsIntStream(Iterator<Integer> iter) {
+        this.iter = iter;
     }
 
     public static IntStream of(int... values) {
-        return null;
+        return new AsIntStream(new MyIterator(values));
+    }
+
+    private Iterable<Integer> intIterable(){
+        return () -> iter;
     }
 
     @Override
     public Double average() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        isEmpty();
+        double sum = 0.0;
+        int size = 0;
+        for (int i : intIterable()){
+            sum += i;
+            size++;
+        }
+        return sum/size;
     }
 
     @Override
     public Integer max() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        isEmpty();
+        int intMin = Integer.MIN_VALUE;
+        for(int i : intIterable()){
+            if(i > intMin)
+               intMin = i;
+        }
+        return intMin;
     }
 
     @Override
     public Integer min() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        isEmpty();
+        int intMin = Integer.MAX_VALUE;
+        for( int i : intIterable() ){
+            if(i < intMin)
+                intMin = i;
+        }
+        return intMin;
     }
 
     @Override
     public long count() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        long count = 0;
+        for(int i : intIterable()){
+            count++;
+        }
+        return count;
+    }
+
+    private void isEmpty(){
+        if(!iter.hasNext()){
+            throw new IllegalArgumentException();
+        }
     }
 
     @Override
     public Integer sum() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        isEmpty();
+        int sum = 0;
+        for (int i : intIterable()){
+            sum += i;
+        }
+        return sum;
     }
 
     @Override
